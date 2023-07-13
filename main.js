@@ -21,11 +21,12 @@ const getKey = [
 ];
 var rangeOtp =document.getElementById("length-result");
     var range =document.getElementById("length");
-
+range.value = "8";
 range.addEventListener("input", () => {
     rangeOtp.textContent = parseInt(range.value);
     // generatePassword();
     });
+
     generatePassword();
 function generatePassword(){
     // alert("called");
